@@ -1,2 +1,14 @@
 # Supervised-UnsupervisedLearningSmokingDrinkingData
 Supervised/Unsupervised Learning Smoking Drinking Data
+
+Kaggle Link: https://www.kaggle.com/code/gulnuruzun/supervised-unsupervisedlearningsmokingdrinkingdata 
+
+Four different supervised algorithms were trained and evaluated. The Logistic Regression model demonstrated the best performance with an accuracy rate of 72.8%. Precision, Recall, and F1-Score metrics showed balanced and consistent results. Additionally, cross-validation results indicated that the model is generally stable.
+
+While KNN provided relatively balanced outcomes, it was not as successful as Logistic Regression. Linear Regression and Decision Tree were not recommended due to their low R² and accuracy scores.
+
+Logistic Regression emerges as the best option, with potential for further improvements in reducing class imbalances and increasing overall accuracy.
+
+Among the unsupervised methods evaluated, K-means emerges as the strongest performer, demonstrating the best overall clustering results. With a Silhouette Score of 0.4479 and a Davies-Bouldin Index of 0.8813, it shows good cluster separation and low similarity between clusters, suggesting effective grouping. The high Calinski-Harabasz Score of 29642.3031 further underscores the clear distinction between clusters. Hierarchical clustering also shows solid performance but is slightly less effective than K-means. In contrast, DBSCAN struggles with cluster differentiation and quality, as indicated by its low Calinski-Harabasz Score and high Davies-Bouldin Index. Gaussian Mixture Model (GMM), while providing reasonable clustering, is hindered by limited fit and complexity issues. Overall, K-means stands out as the most effective method for this dataset, delivering the best balance of cluster separation and quality.
+
+Logistic Regression was chosen as the better option for binary classification problems because it offers a high accuracy rate (72.8%) and balanced performance metrics (Precision, Recall, F1-Score), demonstrating its ability to effectively separate both classes. Cross-validation results further indicate that the model is generally stable and provides consistent results across different data subsets. Additionally, the probability predictions provided by Logistic Regression make interpreting the results easier. In contrast, unsupervised methods (K-means, DBSCAN, GMM) are not suitable for this type of classification problem as they perform clustering analyses and do not directly provide classification results. These methods are effective at grouping data points into clusters but do not offer effective performance in predicting target variables (such as alcohol consumption status). Therefore, Logistic Regression is selected as the most effective solution for binary classification tasks like predicting alcohol consumption.
